@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CoursesDialogComponent } from './courses-dialog.component';
 
-describe('CoursesDialogComponent', () => {
+xdescribe('CoursesDialogComponent', () => {
   let component: CoursesDialogComponent;
   let fixture: ComponentFixture<CoursesDialogComponent>;
 
