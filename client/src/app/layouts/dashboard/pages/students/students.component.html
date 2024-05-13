@@ -43,6 +43,15 @@
         <th mat-header-cell *matHeaderCellDef appSize> Acciones </th>
         <td mat-cell *matCellDef="let element"> 
           
+          <button 
+          [routerLink]="element.id" 
+          mat-fab extended
+          color="primary"
+          >
+          <mat-icon>visibility</mat-icon>
+          Ver
+          </button>
+
           <button   
           (click)="openDialog(element)"        
           mat-fab extended 

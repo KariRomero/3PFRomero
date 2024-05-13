@@ -12,6 +12,10 @@ export class StudentsService{
         return this.httpClient.get<IStudent[]>(environment.baseAPIURL + '/students');
     }
 
+    getStudentById(id:number):Observable<IStudent | undefined>{
+      return this.httpClient.get<IStudent>(`${environment.baseAPIURL}/students/${id}`);
+    }
+
     addStudents(payload:CreateStudentPayload): Observable<IStudent>{
       return this.httpClient.post<IStudent>(`${environment.baseAPIURL}/students`,payload)
     }
